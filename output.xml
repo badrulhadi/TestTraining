@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170408 18:57:16.997" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\terminalman\workspace\TestTraining" id="s1" name="TestTraining">
+<suite source="C:\Users\terminalman\workspace\TestTraining\robot-selenium-demo.robot" id="s1-s1" name="Robot-Selenium-Demo">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170408 18:57:17.147" level="INFO">Opening browser 'firefox' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20170408 18:57:25.213" starttime="20170408 18:57:17.146"></status>
+</kw>
+<test id="s1-s1-t1" name="Google Search &amp; verifing results">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+</arguments>
+<msg timestamp="20170408 18:57:25.216" level="INFO">Opening url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20170408 18:57:25.696" starttime="20170408 18:57:25.215"></status>
+</kw>
+<kw name="Google and check results">
+<arguments>
+<arg>eficode</arg>
+<arg>www.eficode.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>${searchkey}</arg>
+</arguments>
+<msg timestamp="20170408 18:57:25.699" level="INFO">Typing text 'eficode' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20170408 18:57:25.835" starttime="20170408 18:57:25.698"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=_fZl</arg>
+</arguments>
+<msg timestamp="20170408 18:57:25.836" level="INFO">Clicking button 'id=_fZl'.</msg>
+<status status="PASS" endtime="20170408 18:57:25.961" starttime="20170408 18:57:25.835"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20170408 18:57:26.801" starttime="20170408 18:57:25.961"></status>
+</kw>
+<status status="PASS" endtime="20170408 18:57:26.802" starttime="20170408 18:57:25.697"></status>
+</kw>
+<kw name="Google and check results">
+<arguments>
+<arg>deveo</arg>
+<arg>deveo.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>${searchkey}</arg>
+</arguments>
+<msg timestamp="20170408 18:57:26.805" level="INFO">Typing text 'deveo' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20170408 18:57:26.977" starttime="20170408 18:57:26.804"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=_fZl</arg>
+</arguments>
+<msg timestamp="20170408 18:57:26.979" level="INFO">Clicking button 'id=_fZl'.</msg>
+<status status="PASS" endtime="20170408 18:57:27.126" starttime="20170408 18:57:26.978"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20170408 18:57:27.813" starttime="20170408 18:57:27.127"></status>
+</kw>
+<status status="PASS" endtime="20170408 18:57:27.813" starttime="20170408 18:57:26.802"></status>
+</kw>
+<kw name="Google and check results">
+<arguments>
+<arg>robot framework</arg>
+<arg>robotframework.org</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=lst-ib</arg>
+<arg>${searchkey}</arg>
+</arguments>
+<msg timestamp="20170408 18:57:27.816" level="INFO">Typing text 'robot framework' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20170408 18:57:28.012" starttime="20170408 18:57:27.815"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=_fZl</arg>
+</arguments>
+<msg timestamp="20170408 18:57:28.014" level="INFO">Clicking button 'id=_fZl'.</msg>
+<status status="PASS" endtime="20170408 18:57:28.114" starttime="20170408 18:57:28.013"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20170408 18:57:28.687" starttime="20170408 18:57:28.115"></status>
+</kw>
+<status status="PASS" endtime="20170408 18:57:28.688" starttime="20170408 18:57:27.814"></status>
+</kw>
+<tags>
+<tag>templated-tests</tag>
+</tags>
+<status status="PASS" endtime="20170408 18:57:28.690" critical="yes" starttime="20170408 18:57:25.214"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170408 18:57:28.978" starttime="20170408 18:57:28.691"></status>
+</kw>
+<status status="PASS" endtime="20170408 18:57:28.979" starttime="20170408 18:57:17.046"></status>
+</suite>
+<status status="PASS" endtime="20170408 18:57:28.982" starttime="20170408 18:57:17.019"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">templated-tests</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestTraining" pass="1">TestTraining</stat>
+<stat fail="0" id="s1-s1" name="Robot-Selenium-Demo" pass="1">TestTraining.Robot-Selenium-Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
